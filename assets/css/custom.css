@@ -8,3 +8,12 @@
     color: #ffffff;
     font-weight: 900;
 }
+
+.projects {
+    align-items: flex-start;
+    width: 300px;
+    border: 1px solid #ffffff;
+    border-left: 5px solid #ffffff;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
