@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Onen Simon (@sonensimon)'
+AUTHOR = 'Simon Onen'
 SITENAME = 'Data Cosines'
 SITEURL = ''
 
