@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "simonblog"
+  "defaultProject": "simonblog",
+  "cli": {
+    "analytics": "2352947b-2c34-4b91-b4db-d056b9b59e39"
+  }
 }
