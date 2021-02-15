@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { concatMap, delay, repeat } from 'rxjs/operators';
 ​
 import TypeIt from 'typeit';
+import { element } from 'protractor';
 
 @Component({
   selector: 'app-root',
@@ -13,10 +14,11 @@ export class AppComponent implements OnInit {
 
   src$: Observable<any>;
 
+
   constructor() {
-    this.src$ = of('https://cdn.devdojo.com/images/november2020/hero-image.jpeg').pipe(
-      concatMap(url => of(url).pipe())
-    );
+    // this.src$ = of('https://cdn.devdojo.com/images/november2020/hero-image.jpeg').pipe(
+    //   concatMap(url => of(url).pipe())
+    // );
   }
 
 
