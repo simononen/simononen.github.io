@@ -4,6 +4,7 @@ import { concatMap, delay, repeat } from 'rxjs/operators';
 ​
 import TypeIt from 'typeit';
 import { element } from 'protractor';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -14,8 +15,9 @@ export class AppComponent implements OnInit {
 
   src$: Observable<any>;
 
-
-  constructor() {
+  constructor(
+    
+  ) {
     // this.src$ = of('https://cdn.devdojo.com/images/november2020/hero-image.jpeg').pipe(
     //   concatMap(url => of(url).pipe())
     // );
@@ -23,7 +25,6 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit(): void {
-    // this.loadImages();
     this.typeWords();
   }
 
@@ -41,6 +42,10 @@ export class AppComponent implements OnInit {
    );
 
    console.log(this.src$);
+  }
+
+  onSubmit() {
+
   }
 
 }
